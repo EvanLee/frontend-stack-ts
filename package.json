@@ -67,7 +67,7 @@
     "tslint-fix": "tslint --fix -c tslint.json -p tsconfig.json",
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom",
+    "test": "node scripts/test.js ",
     "preinstall": "export SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass"
   },
   "jest": {
@@ -104,7 +104,7 @@
     },
     "globals": {
       "ts-jest": {
-        "tsConfigFile": "/Users/ruzhang/WorkSpace/apartment-manage-system/tsconfig.test.json"
+        "tsConfigFile": "./tsconfig.test.json"
       }
     }
   },
