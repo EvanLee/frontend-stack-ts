@@ -1,0 +1,1 @@
+web: yarn install --production=false && yarn start
