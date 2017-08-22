@@ -7,8 +7,10 @@ before_install:
 cache: yarn
 script:
 - yarn test
+before_deploy: "echo 'ready?'"
 deploy:
   provider: heroku
   app: twbnb
   api_key:
     secure: cHLTUo/W0eqno2n3GdEi1Raijujt7kC0PV8Au2fbGfZb7JKeYMrJDeZ4uIXhELpxRczYr+ws20U1fOnAZanObiAuy9jIUSL3jzYN3hW2UwUqiUvvFG2StXc8W8eNkkPzQd8mevsX9PvqjVxC6Pfc9EzXWD8c7v1botq5EaDV81hDQCGoyeBA1DWnJ8XCehyeavToXsUZ1DqKWLtYi3Eqn65vB74t+dDPs9BNcNePca9ne7Z/Zv1aCr+GTCGupMMALTmm2hh4jK2MHIMe8JrT2IH2/2oe9k/749qurcfm1gNvdo+EdEPP57mS2uXOG6J/P1d9bLkwa/uV9ySZVkT4a1s2I4zT0dpZrJRnGLRALzPirJDUbT1k+eroSgwYxrFdkosC08Vt9oWBG2xXFBsYbtwaB96sZ9bTNHwJWS8c8umZarisxRhEVvHdwUaw6BQliJuHrJya17eoEsyyM3OcSMTmezp/X5Qf+taGRCQqzVy1P9OoTF+eENRZMznyIm56EOnIZ0h7+ADGNILwAWMAPMfmiyGtK6WxMOdVcNzvIdXyC3yjXtmyIZL3y9ZJkdTHI1r5ex0At32NgMz8M4ARdfM+w4jQY/1RhDhGRRX1ZbBk6M4lejvOAOqoyXCa9VnBgv3znH0A7EcDv/a2sL82SKwwa8Gz+2UrR5YIw9cxt0M=
+after_deploy: "echo 'finish deploy'"
