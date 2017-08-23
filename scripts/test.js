@@ -2,7 +2,6 @@
 
 process.env.NODE_ENV = 'test';
 process.env.PUBLIC_URL = '';
-process.env.CI = true;
 
 // Makes the script crash on unhandled rejections instead of silently
 // ignoring them. In the future, promise rejections that are not handled will
